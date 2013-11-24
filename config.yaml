@@ -1,0 +1,8 @@
+config:
+    type: fastcgi # or popen3
+    connection: # to PHP-FPM, if type == fastcgi
+        host: localhost
+        port: 9000
+    dispatcher_path: /Users/magnus/Developer/dispatcher/bin/dispatch.php # to FPM dispatcher, if type == fastcgi
+    #php_path: /usr/local/bin/php # if type == popen3
+    #symfony_console_path: /Users/magnus/Developer/dispatcher/app/console # if type == popen3
